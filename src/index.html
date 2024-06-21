@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adorons</title>
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link href="./output.css" rel="stylesheet">
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+  <section id="hero" class="bg-white">
+    <header class="absolute inset-x-0 top-0 z-50">
+      <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+        <div class="flex lg:flex-1">
+          <a href="#" class="-m-1.5 p-1.5">
+            <span class="sr-only">Adorons</span>
+            <img class="h-8 w-auto" src="img/ichthys.svg" alt="">
+          </a>
+        </div>
+        <div class="flex lg:hidden">
+          <button type="button" id="open-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+            <span class="sr-only">Ouvrir le menu principal</span>
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              aria-hidden="true" data-slot="icon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </button>
+        </div>
+        <div class="hidden lg:flex lg:gap-x-12">
+          <a href="#features" class="text-sm font-semibold leading-6 text-gray-900">Fonctionnalités</a>
+          <a href="#about" class="text-sm font-semibold leading-6 text-gray-900">Notre équipe</a>
+          <a href="#pricing" class="text-sm font-semibold leading-6 text-gray-900">Tarification</a>
+        </div>
+        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+        </div>
+      </nav>
+      <!-- Mobile menu, show/hide based on menu open state. -->
+      <div id="menu" class="hidden" role="dialog" aria-modal="true">
+        <!-- Background backdrop, show/hide based on slide-over state. -->
+        <div class="fixed inset-0 z-50"></div>
+        <div
+          class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <div class="flex items-center justify-between">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Adorons</span>
+              <img class="h-8 w-auto" src="img/ichthys.svg" alt="logo adorons">
+            </a>
+            <button id="close-menu" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+              <span class="sr-only">Fermer le menu</span>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                aria-hidden="true" data-slot="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-gray-500/10">
+              <div class="space-y-2 py-6">
+                <a href="#features"
+                  class="liens-menu -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Fonctionnalités</a>
+                <a href="#about"
+                  class="liens-menu -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Notre
+                  équipe</a>
+                <a href="#pricing"
+                  class="liens-menu -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Tarification</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="relative isolate px-6 pt-14 lg:px-8">
+      <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+        aria-hidden="true">
+        <div
+          class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+          style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+        </div>
+      </div>
+      <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+          <div
+            class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+            Une application 100% co-co-ri-co. <a href="#about" class="font-semibold text-indigo-600"><span
+                class="absolute inset-0" aria-hidden="true"></span>Lire plus <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </div>
+        <div class="text-center">
+          <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">La gestion de <span
+              class="text-indigo-500">l'Adoration</span> simplifiée</h1>
+          <p class="mt-6 text-lg leading-8 text-gray-600">L'inscription et le suivi des adorateurs en toute simplicité
+            avec Adorons</p>
+          <div class="mt-10 flex items-center justify-center gap-x-6">
+            <a href="https://calendly.com/adorons/decouverte" target="_blank"
+              class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Prendre
+              rendez-vous</a>
+            <a href="#features" class="text-sm font-semibold leading-6 text-gray-900">En savoir plus <span
+                aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <img src="img/dashboard.png" alt="capture d'écran du dashboard d'Adorons" class="w-3/4 mx-auto shadow-xl">
+
+
+  <section id="features" class="py-24 sm:py-32 relative">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:text-center">
+        <h2 class="text-base font-semibold leading-7 text-indigo-600">Gestion simplifiée</h2>
+        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Tous les besoins d'une paroisse
+          concernant l'Adoration au même endroit</p>
+      </div>
+      <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+        <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold leading-7 text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                  aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
+
+                </svg>
+              </div>
+              L'inscription à l'Adoration simplifiée
+            </dt>
+            <dd class="mt-2 text-base leading-7 text-gray-600">L'inscription à l'Adoration devient possible en 1 clic
+              depuis n'importe son téléphone, son ordinateur.</dd>
+          </div>
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold leading-7 text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                  aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+                </svg>
+              </div>
+              Planning en temps réel
+            </dt>
+            <dd class="mt-2 text-base leading-7 text-gray-600">La répartition des inscriptions à l'Adoration mis à jour
+              en temps réel dans un planning coloré.</dd>
+          </div>
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold leading-7 text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                  aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0M3.124 7.5A8.969 8.969 0 0 1 5.292 3m13.416 0a8.969 8.969 0 0 1 2.168 4.5" />
+
+                </svg>
+              </div>
+              Notifications
+            </dt>
+            <dd class="mt-2 text-base leading-7 text-gray-600">L'envoi de mail de notification pour prévenir les
+              responsables d'une nouvelle inscription est automatisé et complétement paramétrable.</dd>
+          </div>
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold leading-7 text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                  aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round"
+                    d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
+
+                </svg>
+              </div>
+              Tous les adorateurs au même endroit
+            </dt>
+            <dd class="mt-2 text-base leading-7 text-gray-600">En tant que responsable, retrouver tous les adorateurs
+              inscrits et leurs responsables sur votre tableau de bord.</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <img src="img/inscription.png" alt="capture d'écran du formulaire d'inscription d'Adorons"
+    class="w-4/5 xl:w-1/2 mx-auto shadow-xl">
+
+  <section id="about" class="mx-auto max-w-7xl px-6 lg:px-8 py-24 sm:py-32">
+    <div class="mx-auto max-w-10xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:text-center">
+        <h2 class="text-base font-semibold leading-7 text-indigo-600">Développé à Tours !</h2>
+        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">L'équipe derrière Adorons</p>
+        <p class="mt-10 leading-7 text-gray-600">Après avoir développé une première solution pour gérer
+          l'Adoration de la paroisse St Jean de Beaumont à Tours qui a fait ses preuves durant ses deux années
+          d'utilisation, Gatien développe Adorons, une solution améliorée dans l'optique de la proposer aux paroisses de
+          France pratiquant l'Adoration perpétuelle.</p>
+      </div>
+      <div class="flex flex-col lg:flex-row justify-center items-center gap-20 mt-16">
+        <div class="flex items-center gap-10">
+          <img class="w-[120px] rounded-full" src="img/gatien_g.jpg" alt="photo de Gatien">
+          <div>
+            <h3 class="text-3xl font-semibold text-gray-900 mb-2">Gatien Gillot</h3>
+            <span class="text-gray-500 block transition-all duration-500 group-hover:text-gray-900">Développeur</span>
+          </div>
+        </div>
+
+
+        <div class="flex items-center gap-10">
+          <img class="w-[120px] rounded-full" src="img/guillaume_d.png" alt="photo de Guillaume">
+          <div>
+            <h3 class="text-3xl font-semibold text-gray-900 mb-2">Guillaume Désert</h3>
+            <span class="text-gray-500 block transition-all duration-500 group-hover:text-gray-900">Bêta-testeur</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+        <div class="p-8 sm:p-10 lg:flex-auto">
+          <h3 class="text-2xl font-bold tracking-tight text-gray-900">Accès et hébergement d'Adorons pour un an</h3>
+          <p class="mt-6 text-base leading-7 text-gray-600">Nous gérons entièrement le déploiment et l'hébergement
+            d'Adorons pour votre
+            paroisse en moins de 24h.</p>
+          <div class="mt-10 flex items-center gap-x-4">
+            <h4 class="flex-none text-sm font-semibold leading-6 text-indigo-600">Ce qui est inclus</h4>
+            <div class="h-px flex-auto bg-gray-100"></div>
+          </div>
+          <ul role="list" class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6">
+            <li class="flex gap-x-3">
+              <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+                data-slot="icon">
+                <path fill-rule="evenodd"
+                  d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                  clip-rule="evenodd" />
+              </svg>
+              Hébergement sur nos serveurs sécurisés
+            </li>
+            <li class="flex gap-x-3">
+              <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+                data-slot="icon">
+                <path fill-rule="evenodd"
+                  d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                  clip-rule="evenodd" />
+              </svg>
+              Nom de domaine personnalisé
+            </li>
+            <li class="flex gap-x-3">
+              <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+                data-slot="icon">
+                <path fill-rule="evenodd"
+                  d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                  clip-rule="evenodd" />
+              </svg>
+              Support technique
+            </li>
+            <li class="flex gap-x-3">
+              <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+                data-slot="icon">
+                <path fill-rule="evenodd"
+                  d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                  clip-rule="evenodd" />
+              </svg>
+              Sauvegarde quotidienne des données
+            </li>
+          </ul>
+        </div>
+        <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
+          <div
+            class="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
+            <div class="mx-auto max-w-xs px-8">
+              <p class="text-base font-semibold text-gray-600">Abonnement à l'année</p>
+              <p class="mt-6 flex items-baseline justify-center gap-x-2">
+                <span class="text-5xl font-bold tracking-tight text-gray-900">49€</span>
+                <span class="text-sm font-semibold leading-6 tracking-wide text-gray-600">/an</span>
+              </p>
+              <a href="https://calendly.com/adorons/decouverte" target="_blank"
+                class="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Prendre
+                rendez-vous</a>
+              <p class="mt-6 text-xs leading-5 text-gray-600">Sans engagement</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="p-4 bg-white md:p-8 lg:p-10">
+    <div class="mx-auto max-w-screen-xl text-center">
+      <a href="#" class="flex justify-center items-center text-2xl font-semibold text-indigo-600 gap-6">
+        <img src="img/ichthys.svg" alt="logo adorons" class="h-7">
+      </a>
+      <p class="my-6 text-gray-500 text-xs sm:text-base">Adorons, la gestion de l'Adoration simplifiée.</p>
+      <span class="text-gray-500 sm:text-center text-xs sm:text-sm">© 2024 <a href="#hero"
+          class="hover:underline">Adorons</a> - <a href="mailto:contact@adorons.fr"
+          class="hover:underline">contact@adorons.fr</a></span>
+    </div>
+  </footer>
+
+</body>
+
+</html>
