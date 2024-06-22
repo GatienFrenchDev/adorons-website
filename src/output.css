@@ -736,6 +736,14 @@ video {
   height: 1px;
 }
 
+.h-3 {
+  height: 0.75rem;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -1347,6 +1355,22 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:h-8 {
+    height: 2rem;
+  }
+
+  .md\:h-4 {
+    height: 1rem;
+  }
+
+  .md\:h-6 {
+    height: 1.5rem;
+  }
+
+  .md\:h-7 {
+    height: 1.75rem;
+  }
+
   .md\:p-8 {
     padding: 2rem;
   }
