@@ -303,11 +303,12 @@
         </div>
         <a href="mentions-legales.html" class="hover:underline text-gray-500">Mentions légales</a>
       </div>
-      <hr class="my-6 border-gray-200 sm:mx-autolg:my-8" >
+      <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" >
       <div class="sm:flex sm:items-center sm:justify-between">
-        <span class="text-sm text-gray-500 sm:text-center">© 2024 <a href="https://adorons.fr/"
+        <span class="text-sm text-gray-500 sm:text-center">© <span id="current-year">2024</span> <a href="https://adorons.fr/"
             class="hover:underline">Adorons</a>. Tous droits réservés.
         </span>
+
         <div class="flex mt-4 sm:justify-center sm:mt-0">
           <a href="https://github.com/GatienFrenchDev/adorons-website" target="_blank"
             class="text-gray-500 hover:text-gray-900 ms-5">
@@ -331,6 +332,10 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
 
 
 </body>
